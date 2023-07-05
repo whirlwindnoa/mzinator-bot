@@ -9,7 +9,7 @@ const fs = require("fs");
 const client = new Client({ intents: [GatewayIntentBits.MessageContent, GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages] });
 
 const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: "",
   });
 
 const openai = new OpenAIApi(configuration);
