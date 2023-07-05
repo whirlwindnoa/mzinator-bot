@@ -99,4 +99,4 @@ client.on('messageCreate', (message) => {
         }
     }
 });
-client.login("MTA2NDYwMzM2OTgxMDk1MjIyMg.GBE3mF.fjcUlPZGt8ZZ7VwGYlsgpB0CbmcxAJCNBB_8T4");
+client.login("");
