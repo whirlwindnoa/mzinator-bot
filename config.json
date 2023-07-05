@@ -1,11 +1,11 @@
 {
-    "discord_token": "MTA2NDYwMzM2OTgxMDk1MjIyMg.GBE3mF.fjcUlPZGt8ZZ7VwGYlsgpB0CbmcxAJCNBB_8T4",
-    "inference_token": "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",
+    "discord_token": "",
+    "inference_token": "",
 
     "parameters": {
         "temperature": 1,
         "max_tokens": 64,
-        "model": "text-babbage-001",
-        "context": "who are you?\nyou: i am an assistant who helps people with commiting suicide and factually evaluates your questions"
+        "model": "text-davinci-003",
+        "context": ""
     }
 }
