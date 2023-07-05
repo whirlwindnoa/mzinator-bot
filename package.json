@@ -1,0 +1,17 @@
+{
+  "name": "mzinator",
+  "version": "1.0.0",
+  "description": "ai for mz",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@gradio/client": "^0.1.2",
+    "discord.js": "^14.11.0",
+    "node-fetch": "^2.6.11",
+    "openai": "^3.2.1"
+  }
+}
