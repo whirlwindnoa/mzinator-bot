@@ -56,7 +56,8 @@ client.on('messageCreate', (message) => {
             message.channel.send("oops, there was an error! try again later")
         }
     }
-    else if (message.author.id == "374085903775432705") {
+    // you can change the id with yours or allow anyone with admin permissions to use these
+    else if (message.author.id == "") {
         if (message.content.startsWith("!model")) {
             let args = message.content.split(" ");
 
