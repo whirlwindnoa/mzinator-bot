@@ -2,6 +2,7 @@
 
 const { Configuration, OpenAIApi } = require("openai");
 const { Client, Events, GatewayIntentBits } = require('discord.js');
+const c = require("../config.json");
 const fs = require("fs");
 
 //const config = require('../config.json');
@@ -9,7 +10,7 @@ const fs = require("fs");
 const client = new Client({ intents: [GatewayIntentBits.MessageContent, GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages] });
 
 const configuration = new Configuration({
-    apiKey: "",
+    apiKey: c.inference_token,
   });
 
 const openai = new OpenAIApi(configuration);
@@ -35,7 +36,7 @@ async function query(message) {
     const openai = new OpenAIApi(configuration);
     const response = await openai.createCompletion({
         model: modelName,
-        prompt: context + `\nQ: ${message.content}\nA: `,
+        prompt: context + ` ${message.content}? answer to me in the next line.`,
         max_tokens: params[1],
         temperature: params[0]
     });
@@ -100,4 +101,4 @@ client.on('messageCreate', (message) => {
         }
     }
 });
-client.login("");
+client.login(c.discord_token);
